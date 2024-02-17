@@ -1,6 +1,7 @@
 import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
+import NextReactP5Wrapper from './p5art';
 
 const frameMetadata = getFrameMetadata({
   buttons: [
@@ -28,7 +29,7 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
+  title: 'gilbster.xyz',
   description: 'LFG',
   openGraph: {
     title: 'zizzamia.xyz',
@@ -43,7 +44,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>gilbster.xyz</h1>
+
+      <NextReactP5Wrapper />
     </>
   );
 }
